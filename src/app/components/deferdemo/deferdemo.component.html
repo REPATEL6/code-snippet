@@ -1,0 +1,14 @@
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsam expedita explicabo laborum fugit qui voluptatem? Hic magnam quidem aliquam temporibus corporis iure consequatur nesciunt eius. Facere fugiat quae, eveniet aperiam, natus cupiditate, maiores quos veritatis voluptatibus cumque esse blanditiis repellat in tempore! Eos porro repellendus tenetur atque, eligendi voluptate?</p>
+@defer (on interaction) {
+    <app-heavy></app-heavy>
+}
+@loading(after 100ms; minimum 1s){
+    <h3>Content is loading</h3>
+}
+@placeholder {
+    <h3>Placeholder</h3>
+}
+@error {
+    <h3>Error while loading the component</h3>
+}
+

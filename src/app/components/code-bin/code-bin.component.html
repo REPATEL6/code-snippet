@@ -1,0 +1,10 @@
+<!-- Reactive driven form -->
+<form class="container" [formGroup] = "codeBinForm">
+    <h4>Code-Bin</h4>
+    <!-- <br> -->
+    <input type="text" placeholder="Title" [formControl] = "title">
+    <h5 class="red-text" [hidden]="title.valid || title.untouched">Title is required</h5>
+    <textarea type="text" placeholder="Code snippet" [formControl] = "code"></textarea>
+    <h5 class="red-text" [hidden]="code.valid || code.untouched">Code snippet is required</h5>
+    <button class="btn-green" [disabled]="codeBinForm.invalid" (click)="save()">Create</button>
+</form>
